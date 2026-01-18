@@ -4,7 +4,7 @@ const RootLayout = () => (
   <div className="container mx-auto p-5 w-full flex min-h-dvh flex-col gap-4">
     <nav className="flex justify-between gap-4 items-center">
       <Link to="/" className="flex gap-2 items-center">
-        <img src="/gotmail_logo.svg" alt="Gotmail.jp Logo" className="h-12 invert" />
+        <img src="gotmail_logo.svg" alt="Gotmail.jp Logo" className="h-12 invert" />
         <div className="leading-tight">
           <p>GOTMAIL.JP</p>
           <p>ARCHIVAL</p>
