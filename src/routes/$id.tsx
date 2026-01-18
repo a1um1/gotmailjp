@@ -14,8 +14,8 @@ function RouteComponent() {
       const changeUrl = function (url: string): any {
         try {
           const parsed = new URL(url);
-          if (url.endsWith(".swf")) return `/${id}${parsed.pathname}`;
-          if (url.endsWith(".flv")) return `/${id}${parsed.pathname}`;
+          if (url.endsWith(".swf")) return `/gotmailjp/${id}${parsed.pathname}`;
+          if (url.endsWith(".flv")) return `/gotmailjp/${id}${parsed.pathname}`;
         } catch (e) {}
         return url;
       };
@@ -40,7 +40,7 @@ function RouteComponent() {
   return (
     <div id="container" className="h-full flex flex-col flex-1">
       <object className="h-full flex-1 flex flex-col">
-        <embed src="index.swf" className="w-full flex-1" />
+        <embed src={`/gotmailjp/${id}/index.swf`} className="w-full flex-1" />
       </object>
     </div>
   );
