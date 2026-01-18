@@ -40,7 +40,7 @@ function RouteComponent() {
   return (
     <div id="container" className="h-full flex flex-col flex-1">
       <object className="h-full flex-1 flex flex-col">
-        <embed src={`/gotmailjp/${id}/index.swf`} className="w-full flex-1" />
+        <embed src={`/index.swf`} className="w-full flex-1" />
       </object>
     </div>
   );
