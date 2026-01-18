@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { allGames } from "../game";
 
 export const Route = createFileRoute("/")({
@@ -20,9 +20,15 @@ function RouteComponent() {
       <ul className="list-disc pl-6">
         {allGames.map((game) => (
           <li key={game.id}>
-            <a href={`/${game.id}`} className="hover:underline">
+            <Link
+              to="/$id"
+              params={{
+                id: game.id,
+              }}
+              className="hover:underline"
+            >
               {game.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
