@@ -14,8 +14,7 @@ function RouteComponent() {
     (function (originalFetch) {
       const changeUrl = function (url: string): any {
         try {
-          const { pathname, ...a } = new URL(url);
-          console.log("Intercepted URL:", pathname);
+          const { pathname } = new URL(url);
           if (
             (pathname.endsWith(".swf") || pathname.endsWith(".flv")) &&
             pathname.startsWith("/gotmailjp/")
