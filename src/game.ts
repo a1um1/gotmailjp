@@ -27,4 +27,28 @@ export const allGames = [
     id: "scrapper",
     title: "The Scrapper",
   },
+  {
+    id: "daydream",
+    title: "The Daydream",
+  },
+  {
+    id: "privacy",
+    title: "The Privacy",
+  },
+  {
+    id: "trace",
+    title: "Trace",
+  },
+  {
+    id: "whiteday",
+    title: "The White Day",
+  },
+  {
+    id: "oolongtea",
+    title: "Oolong Tea Stry",
+  },
+  {
+    id: "nigepico",
+    title: "Nigepico",
+  },
 ];

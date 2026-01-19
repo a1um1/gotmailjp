@@ -17,21 +17,26 @@ function RouteComponent() {
 
       <p>You can play these game on browser now</p>
 
-      <ul className="list-disc pl-6">
+      <div className="grid lg:grid-cols-4 gap-4">
         {allGames.map((game) => (
-          <li key={game.id}>
+          <div key={game.id}>
             <Link
               to="/$id"
               params={{
                 id: game.id,
               }}
-              className="hover:underline"
+              className="hover:underline text-center flex items-center flex-col gap-2"
             >
-              {game.title}
+              <img
+                src={`/gotmailjp/${game.id}/logo.jpeg`}
+                alt={`${game.title} Thumbnail`}
+                className="max-w-64 mb-auto"
+              />
+              <p>{game.title}</p>
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </>
   );
 }

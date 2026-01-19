@@ -29,7 +29,11 @@ function RouteComponent() {
       window.fetch = function () {
         let a = Array.from(arguments) as [input: Request, init?: RequestInit];
         if (a[0]?.url?.endsWith("cgi/swf.pl"))
-          return Promise.resolve(new Response(`<data swfname_e="e.swf" swfname="j.swf" />`));
+          return Promise.resolve(
+            new Response(
+              `<data swfname_e="e.swf" swfname="j.swf" swfname2_e="e.swf" swfname2="j.swf" swfname2_j="j2.swf" />`,
+            ),
+          );
         if (typeof a[0] === "string") {
           a[0] = changeUrl(a[0]);
         } else if (a[0] && typeof a[0].url === "string") {
