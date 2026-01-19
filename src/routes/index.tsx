@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
 function RouteComponent() {
   return (
     <>
-      <div className="bg-[var(--alert-bg)] text-[var(--alert-fg)] p-4 font-bold">
+      <div className="bg-(--alert-bg) text-(--alert-fg) p-4 font-bold">
         ⚠️ This project are for archival purposes only.
         <hr className="my-3" />
         <p>This is collection of flash games from the early 2000s. Developed by IDAC & GotMail.</p>
