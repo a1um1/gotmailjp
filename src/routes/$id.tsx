@@ -19,7 +19,7 @@ function RouteComponent() {
             (pathname.endsWith(".swf") || pathname.endsWith(".flv")) &&
             pathname.startsWith("/gotmailjp/")
           )
-            return `/gotmailjp/${id}/${pathname.split("/").pop()}`;
+            return `/gotmailjp/${id}/${pathname.split("/").slice(1).join("/")}`;
         } catch (e) {}
         return url;
       };
