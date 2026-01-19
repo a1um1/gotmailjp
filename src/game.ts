@@ -23,4 +23,8 @@ export const allGames = [
     id: "stealth",
     title: "Stealth",
   },
+  {
+    id: "scrapper",
+    title: "The Scrapper",
+  },
 ];
